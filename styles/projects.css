@@ -1,0 +1,30 @@
+.project-description {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.project-description1, .project-description2 {
+    border: 1px solid black;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    margin-left: 8px;
+    border-radius: 10px;
+}
+.project-description1:hover, .project-description2:hover{
+    scale: 1.0;
+    color: black;
+    background-color:whitesmoke;
+}
+
+.css-box1 {
+    background-color: rgb(204, 227, 222);
+}
+
+.css-box1:hover {
+    background-color: rgb(204, 227, 222);
+}
+
+.project-description1:hover, .project-description2:hover {
+    background-color: rgb(107, 144, 128);
+}

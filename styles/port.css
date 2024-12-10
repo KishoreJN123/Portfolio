@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.head1 {
+    width:100%;
+    position: fixed;
+    background-color: rgb(107, 144, 128);
+    z-index: 100;
+    display: grid;
+}
+
+.content1 {
+    display: grid;
+    margin-top: 90px;
+    grid-template-columns: auto auto;
+    padding-bottom: 5%;
+    background-image: linear-gradient(rgb(107, 144, 128), rgb(164, 195, 178));
+}
+
+.profile {
+    text-align: center;
+    align-content: end;
+}
+
+.profile img {
+    padding-top: 50px;
+    width:55%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 4%;
+    padding-right: 5%;
+}
+
+nav h1 {
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+span {
+    color: rgb(39, 39, 16);
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 25px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li :hover {
+    color: black;
+    box-shadow: 0 1px whitesmoke;
+}
+
+.content {
+    color: whitesmoke;
+    padding-left: 5%;
+    padding-top:9%;
+    font-size: 20px;
+}
+
+.content h2 {
+    padding-bottom: 8px;
+}
+
+.content h3 {
+    text-decoration: underline;
+    padding-left: 1px;
+    padding-bottom: 8px;
+}
+
+.content p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 550px;
+    text-wrap: wrap;
+    padding-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form1 {
+    width: 380px;
+    max-width: 100%;
+}
+
+.form1 input:first-child {
+    display: inline-block;
+    padding: 10px 100px 10px 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.form1 input:last-child {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: black;
+    color: whitesmoke;
+    border: 0.5px solid;
+    cursor: pointer;
+}
+
+.form1 input:hover {
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px whitesmoke;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(rgb(164, 195, 178),  rgb(204, 227, 222)) ;
+}
+
+.about-content h2 {
+    color: black;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.about-content h4 {
+    color: white;
+    font-size: x-large;
+    padding-top: 2%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.about-content p {
+    color: white;
+    border-radius: 20px;
+    padding: 5%;
+    font-size: 21px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    background-color: black;
+    padding-bottom: 20px;
+    box-shadow: 15px 15px 15px rgb(91, 119, 107);
+}
+
+.aboutpara {
+    text-align: center;
+}
+
+.aboutpara button {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 500;
+    padding: 1px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    color: black;
+    background-color: rgb(107, 144, 128);
+    box-shadow: 0 0 20px whitesmoke;
+}
+
+.about img {
+    padding-left: 50px;
+    width: 550px;
+}
+
+.about-content {
+    width: 90%;
+    padding-left: 40px;
+}
+
+.main1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skill {
+    background-image:linear-gradient(rgb(204, 227, 222), rgb(234, 244, 244)) ;
+    padding: 30px 0;
+}
+
+.title h2 {
+    font-size: xx-large;
+    margin: 10px 0;
+    text-decoration: underline;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.box1, .box3, .box4 {
+    display: flex;
+    flex: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 5px 5px 5px rgb(91, 119, 107);
+}
+
+.card {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.box1 img, .box3 img, .box4 img {
+    width: 210px;
+    padding-left:55px;
+    padding-right: 20px;
+}
+
+.box1:hover,.box3:hover, .box4:hover {
+    scale: 1.1;   
+    background-color: rgb(107, 144, 128);
+}
+.box1 button{
+    border: 2px solid;
+} 
+
+.box3 button{
+    border: 2px solid;
+}
+.box4 button{
+    border: 2px solid;
+}
+.box1 p {
+        width: 85%;
+        padding-top: 10px;
+}
+
+.box3 p {
+    width: 85%;
+    padding-top: 10px;
+}
+.box4 p {
+    width: 85%;
+    padding-top: 10px;
+}
+.para a {
+    font-size: smaller;
+    color: black;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 0 8px;
+}
+
+.para a:hover {
+    scale: 1.1;
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px whitesmoke;
+}
+
+.para p {
+    padding-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 50px;
+    background-color: rgb(239, 244, 244)
+}
+
+.foot1 {
+    padding-right: 10px;
+}
+
+.foot1 i {
+    margin-top: 10px;
+    padding: 4px;
+    font-size: x-large;
+}
+
+.foot1 i:hover {
+    scale: 1.1;
+    box-shadow: 0 0 10px rgb(107, 147, 138);
+}
+
+.foot1 h4 {
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+.foot2 h5 {
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+.foot3 h5 {
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+.foot3 input {
+    border-radius: 20px;
+}
+
+.input-email {
+    padding-top: 10px;
+    position: relative;
+}
+
+.input-button {
+    width: 55px;
+    position: absolute;
+    bottom: 2px;
+    right: 44px;
+    background-color: rgb(107, 144, 128);
+    font-weight: 450;
+    padding: 1px;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.footmail {
+    width: 220px;
+    padding: 3px;
+}
+
+.input-button:hover {
+    scale: 1.1;
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px rgb(107, 144, 128);
+}
+
+.foot2 ul li {
+    line-height: 25px;
+    list-style: none;
+}
+
+.copyright {
+   text-align: center;
+
+}
+
+.foot1 i {
+    font-size: large;
+    padding-left: 1px;
+    padding-right: 7px;
+}
+
+.foot1 h4 i {
+    color: rgb(107, 144, 128);
+}
+
+nav h1 i {
+    color: black;
+    padding-right: 8px;
+}
+
+.qualification {    
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.qualification-heading {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    background-image: linear-gradient(rgb(234, 244, 244), rgb(246, 255, 248));
+}
+
+.course, .hrsec, .college, .sslc {
+    justify-content: center;
+    align-items: center;
+    min-height: 130px;
+    width: 80%;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 5px 5px 5px rgb(91, 119, 107);
+}
+
+.course, .college, .sslc, .hrsec{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.course:hover ,.college:hover,.sslc:hover,.hrsec:hover {
+    scale: 1.1;
+    color: black;
+    background-color:rgb(204, 227, 222);
+}
+
+.course h4 {
+    padding-right: 20px;
+    font-weight: bolder;
+}
+
+.college h4 {
+    text-align: center;
+    padding-right: 30px;
+}
+
+.hrsec h4{
+    padding-right: 120px;
+}
+
+.sslc h4{
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.schldetails2{
+    padding-left: 150px;
+}
+
